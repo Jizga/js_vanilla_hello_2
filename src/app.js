@@ -24,12 +24,11 @@ function generateRandomIndex(arr) {
 window.onload = function() {
   //write your code here
 
-  let excuse = `${who[generateRandomIndex(who)]} ${
-    what[generateRandomIndex(what)]
-  } 
-  ${when[generateRandomIndex(when)]}
+  let excuse = `
+    ${who[generateRandomIndex(who)]} 
+    ${what[generateRandomIndex(what)]} 
+    ${when[generateRandomIndex(when)]}
+    ${where[generateRandomIndex(where)]}`;
 
-  ${where[generateRandomIndex(where)]}
-  `;
   document.getElementById("excuse").innerHTML = excuse.toUpperCase();
 };
